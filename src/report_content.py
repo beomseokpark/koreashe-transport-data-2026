@@ -179,7 +179,8 @@ REFS = [
 ]
 CELLS["refs"] = [
     ("o", "Python 3.12(pandas, geopandas, statsmodels, lifelines, esda, PuLP, scipy, matplotlib), python-hwpx, Playwright, Claude Code", "도구"),
-    ("o", f"<b>{REPO}</b>(README에 재실행 순서, 원자료는 스크립트로 다시 내려받음)", "코드"),
+    ("o", "분석 코드 공개 저장소(README에 재실행 순서, 원자료는 스크립트로 다시 내려받음):", "코드"),
+    ("url", REPO),
     ("refs", REFS),
 ]
 CELLS["images"] = [

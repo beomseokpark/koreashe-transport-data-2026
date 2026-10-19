@@ -155,6 +155,11 @@ class CellWriter:
         if src:
             self.para("fsrc", dict(alignment="CENTER", line_spacing_percent=125, spacing_after_pt=4), self.segs(f"자료: {src}", self.hf, self.small - 0.5))
 
+    def url(self, link):
+        """긴 주소가 줄 중간에서 갈리지 않게 따로 한 줄(왼쪽 정렬, 돋움 9pt)"""
+        self.para("url", dict(alignment="LEFT", line_spacing_percent=130, indent_left_mm=7, first_line_indent_mm=0, spacing_before_pt=0, spacing_after_pt=2),
+                  [(link, self.cp(self.hf, 9, True))])
+
     def refs(self, items):
         for i, x in enumerate(items, 1):
             self.para("ref", dict(alignment="LEFT", line_spacing_percent=130, indent_left_mm=5, first_line_indent_mm=-5, spacing_after_pt=1),

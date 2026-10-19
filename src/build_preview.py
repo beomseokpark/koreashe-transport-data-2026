@@ -23,6 +23,7 @@ def block(b):
     if k == "d": return f'<p class="d">- {mk(b[1])}</p>'
     if k == "nk": return f'<p class="nk">※ {mk(b[1])}</p>'
     if k == "p": return f'<p class="pp">{mk(b[1])}</p>'
+    if k == "url": return f'<p class="url">{b[1]}</p>'
     if k == "box": return '<div class="box">' + "".join(f"<p>{mk(x)}</p>" for x in b[1]) + "</div>"
     if k == "refs": return '<ol class="refs">' + "".join(f"<li>{mk(x)}</li>" for x in b[1]) + "</ol>"
     if k == "fig":
@@ -83,7 +84,7 @@ table.dt { font-size:8pt; break-inside:avoid; } td.dl { text-align:left !importa
 .fig { text-align:center; margin:1.6mm 0 1.2mm; break-inside:avoid; } .fig img { display:block; margin:0 auto; } .fc { font-family:'HDo'; font-weight:700; font-size:9.5pt; margin-top:0.6mm; } .fs { font-family:'HDo'; font-size:8pt; }
 .box { break-inside:avoid; border:0.12mm solid #8AA4D6; background:#F4F4F2; padding:0.8mm 2mm; margin:0.6mm 0 1mm 3mm; font-family:'HDo'; font-size:8pt; line-height:1.35; } .box p { padding-left:3.5mm; text-indent:-3.5mm; }
 .r.fs { font-family:'HDo'; font-size:8.2pt; line-height:1.3; padding-left:5mm; margin:0.5mm 0; } .refs li { margin-bottom:0.3mm; }
-.nt { font-family:'HL'; font-size:11pt; line-height:1.6; margin-top:0.5mm; }
+p.url { font-family:'HDo'; font-weight:700; font-size:9pt; padding-left:7mm; text-align:left; margin:0 0 0.8mm; } .nt { font-family:'HL'; font-size:11pt; line-height:1.6; margin-top:0.5mm; }
 """
 
 def build():

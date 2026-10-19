@@ -1,0 +1,13 @@
+{
+ "mean_km": 8.418754829625945,
+ "subsidy_mean": 9655.734526333808,
+ "subsidy_median": 8119.698320610687,
+ "user_fare_mean": 2375.275685755808,
+ "meter_mean": 10031.010212089619,
+ "lastmile_two_legs": 10600.0,
+ "breakeven_km": 10.500000000000009,
+ "wav_bonus_chicago_usd": 30,
+ "calltaxi_cost_per_trip_2024": 59700,
+ "pt_wage": 12030,
+ "pt_year": 15037500
+}

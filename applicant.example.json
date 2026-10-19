@@ -1,0 +1,9 @@
+{
+ "name": "이름",
+ "affiliation": "소속",
+ "email": "[이메일]",
+ "phone": "[연락처]",
+ "repo": "https://github.com/<계정>/koreashe-transport-data-2026",
+ "prompts": ["보고서 Ⅳ절에 넣을 실제 프롬프트"],
+ "ai_setting": "AI 서비스 데이터 설정 확인 문장"
+}
